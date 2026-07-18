@@ -4,11 +4,13 @@
     --background: rgb(20,20,20);
     --color: rgb(210,210,250);
     --secondary: rgb(250,250,230);
+    --hoverColor: rgb(181, 181, 220);
 }
 [data-theme="light"]{ 
     --background: rgb(210, 210, 255);
     --color: rgb(50,20,50);
     --secondary: rgb(65,40,65);
+    --hoverColor: rgb(68, 32, 68);
 }
 body{
     background-color: var(--background);
@@ -43,4 +45,38 @@ a:hover{
 
 #Content{
     text-align: center;
+    padding-top: 5vh;
+}
+#LoginTab{
+    width: 30vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.31);
+    border-radius: 2dvh;
+    font-size: 110%;
+}
+#LoginTab a{
+    font-size: 65%;
+}
+button{
+    margin-top: 2vh;
+    color: var(--background);
+    background-color: var(--color);
+    border-radius: .5dvh;
+    transition: background-color .3s ease;
+}
+button:hover{
+    background-color: var(--hoverColor);
+}
+
+input{
+    background-color: var(--color);
+    color: var(--background);
+    border: none;
+    border-radius: .5vh;
+}
+input:focus{
+    outline: none;
+    border: none;
 }

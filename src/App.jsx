@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 
 import Calendar from "./Calendar";
 import LoginScreen from "./LoginScreen";
+import RegisterTab from "./Register";
 
 import "bootstrap/dist/css/bootstrap.css"
 
@@ -43,16 +44,17 @@ function App (){
           <li>
             <ul><h2>Rewatcher</h2></ul>
             <ul><a href="/">Main</a></ul>
-            <ul><a href="/Calendar">Calendar</a></ul>
-            <ul><a href="/Login">Log In</a></ul>
+            <ul><a href="/calendar">Calendar</a></ul>
+            <ul><a href="/login">Log In</a></ul>
           </li>
           <img id="toggleBtn" src="/sun.svg" onClick={Toggle}></img>
         </div>
         <div id="Content">
           <Routes>
             <Route exact path="/" Component={()=>{<h1>Home</h1>}}/>
-            <Route path="/Calendar" Component={Calendar}/>
-            <Route path="/Login" Component={LoginScreen}/>
+            <Route path="/calendar" Component={Calendar}/>
+            <Route path="/login" Component={LoginScreen}/>
+            <Route path="/register"  Component={RegisterTab}/>
             <Route path="*" Component={Error404}/>
           </Routes>
         </div>

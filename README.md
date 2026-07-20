@@ -8,6 +8,6 @@
 
 ## Technology used: 
 - React + Vite https://react.dev/ (Frontend Framework)
-- Firebase  https://firebase.google.com/ (DataBase)
+- MongoDB https://www.mongodb.com/ (DataBase)
 - Express (Backend)
 
